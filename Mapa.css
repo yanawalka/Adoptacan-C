@@ -1,0 +1,42 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.PortadaCentros {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://lh3.googleusercontent.com/proxy/K5njjhZftvgBStINHOHDGzL1WC4KdBVocwfgSUeccB6Wi2NrRxFEu_s9YpmRvxfobrb-aZL2smeTZ_34JZXG2PIjJTzrc-wA-alV4CNw-xGmJDiFwKPYQFyJiBynMKL-dhv26qKVNJ3LkrZgyiR3T52VYmxfTROkXA");
+    height: 500px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
+  }
+.TituloCentros{
+    box-shadow: 0px 4px 19px 0px rgba(0,0,0,0.75);
+    text-align: center;
+    margin-top: 50px;
+}
+.TituloCentros > h1{
+    font-size: 80px;
+    font-family: monospace;
+    color: rgb(92, 92, 92);
+    text-decoration-color: gray ;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+.TituloCentros > p{
+    font-size: 35px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(92, 92, 92);
+    text-decoration-color: gray ;
+    font-weight: lighter;
+}
+.Mapa{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 70px;
+    }

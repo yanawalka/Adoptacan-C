@@ -1,0 +1,123 @@
+
+.LineaSeparadora {
+    background-color: rgb(255, 0, 106);
+    list-style: none;
+}
+.LineaSeparadora1 {
+    background-color: rgb(12, 0, 122);
+    list-style: none;
+}
+#Membrete {
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    font-family: arial;
+    font-weight: bold;
+    padding-top: 10px;
+    height: 25px;
+    text-align: right;
+}
+
+#TextoMembrete {
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#TextoMembrete:hover {
+    color: black;
+}
+
+#LogoMuni {
+    margin-left: 60%;
+    width: 70%;
+    height: 100%;
+}
+
+#MenuNavegacion {
+    margin-top: 30px;
+    position: sticky;
+    list-style: none;
+    display: flex;
+    z-index: 1;
+    background: rgb(255, 255, 255);
+    top: 0px;
+    box-sizing: border-box;
+    box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+#DivPaginas {
+    margin-top: 50px;
+    margin-left: 550px;
+    display: inline-flex;
+    position: absolute;
+    text-align: center;
+}
+
+#TextoMenu {
+    margin: 25px;
+    text-decoration: none;
+    color: rgb(65, 63, 63);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-image: linear-gradient( rgb(255, 0, 106), rgb(255, 0, 106));
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .7s;
+}
+
+#TextoMenu:hover {
+    background-size: 100% 4px;
+}
+
+footer {
+    background: black;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    clear: both;
+}
+
+.copyright {
+    color: white;
+    text-align: right;
+    font-style: italic;
+    padding: 20px;
+}
+
+.copyright a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    color: rgb(255, 111, 0);
+}
+.BotonAdopcion{
+    box-shadow: 0px 0px 0px 3px rgb(255, 255, 255);
+    border-radius: 5px 5px 5px 5px;
+    text-decoration: none;
+    font-size: 25px;
+    background-color:rgb(255, 0, 106) ;
+    color:whitesmoke;
+    font-family:monospace;
+    margin-top: 1030px;
+    display: flex;
+    z-index: 3;
+    position: absolute;
+    margin-left: 1500px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.BotonAdopcion:hover{
+    box-shadow: 0px 0px 0px 3px rgb(255, 0, 106);
+    background-color:rgb(255, 255, 255);
+    color:rgb(255, 0, 106);
+}

@@ -1,0 +1,39 @@
+*{
+    margin: 0%;
+
+}
+.TituloRequisitos{
+    box-shadow: 0px 4px 19px 0px rgba(0,0,0,0.75);
+    text-align: center;
+    margin-top: 90px;
+    background:rgb(255, 255, 255);
+
+}
+.TituloRequisitos > h1{
+    font-size: 80px;
+    font-family: monospace;
+    color: rgb(92, 92, 92);
+    text-decoration-color: gray ;
+    font-weight: lighter;
+}
+.DivRequisitos{
+    background-color:rgb(36, 36, 87);
+    height: 1000px;
+}
+.ListaRequisitos{
+    font-size: 30px;
+    font-family: arial;
+    font-weight:bolder;
+    color: rgb(255, 0, 89);
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 100px;
+}
+.ListaRequisitos > li{
+    margin-top: 40px;
+}
+.ListaRequisitos > li > ul > li{
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
