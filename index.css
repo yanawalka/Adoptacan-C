@@ -1,0 +1,88 @@
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #D73653;
+    
+}
+body{
+    background: #326c26;
+}
+
+.navegador{
+    background: #263A6C;
+}
+
+.margen50{
+    padding-bottom: 200px;
+}
+
+.textoCarou{
+    margin-top: 30%;
+
+}
+.textoCarou3{
+    margin-top: 25%;
+
+}
+.iconoCarousel {
+    background: #263A6C;
+  border-radius: 75px;
+  /* padding: 5px; */
+}
+.icono{
+    color: #263A6C;
+}
+
+
+.botonNext{
+    margin-top: 15%;
+}
+.requisitos{
+    color: #D73653;
+}
+.btnNav{
+    color: white;
+}
+.btnNav:hover{
+    color: #D73653;
+}
+.nosotros{
+    background-image: url("src/hospital.jpeg");
+    padding-top: 200px;
+    padding-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.tarjNosotros{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.titulos{
+    margin-bottom: -5px;
+}
+.botonesCuidados{
+    background: #263A6C;
+    color: whitesmoke;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 20px;
+    width: 100%;
+    border-color: transparent;
+}
+.botonesCuidados:hover{
+    background: #e9e9e9;
+    color: #263A6C;
+
+}
+.cuidados{
+    background-image: url("src/caschi4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}

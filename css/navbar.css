@@ -1,0 +1,18 @@
+#btnNav{
+  font-size: 13px;
+  color: white;
+}
+#btnNav:hover{
+color: #fa3a5d;
+}
+.navegador{
+  background: #263A6C;
+}
+
+#btnNav1{
+  font-size: 20px;
+  color: white;
+}
+#btnNav1:hover{
+color: #fa3a5d;
+}
