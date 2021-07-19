@@ -115,7 +115,7 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="d-flex flex-column align-items-center text-center">
-                                <img src="<?php print $fila['FOTO']?>" alt="Admin" width="250">
+                                <img src="http://servicios.municipalidadsalta.gob.ar/adopciones-caninas/sisadoptacan/public/images/canes/<?php print $fila['FOTO']?>" alt="Admin" width="250">
                                 <div class="mt-3">
                                     <h4><?php echo $fila['APODO']; ?></h4>
                                     <p class="text-secondary mb-1">Raza: <?php if($fila['MESTIZO']=='S'){echo "Mestizo/";} echo $fila['APODO']; ?></p>
