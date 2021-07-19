@@ -25,7 +25,7 @@
     $idH = $_SESSION["EMAIL"];
 
     
-    $personal = oci_parse($conn,"SELECT p.ID,p.MESTIZO, p.OTROSPERROS, p.APODO, p.GATOS, p.PORTE, p.SEXO, p.DEPTO, p.FECHANAC,p.CASTRADO, p.GUARDIAN ,r.NOMBRE, f_get_edad(p.ID, sysdate) EDAD FROM PERROS p INNER JOIN RAZAS r ON p.RAZA_ID=r.ID WHERE p.ID='$idP'");
+    $personal = oci_parse($conn,"SELECT p.ID,p.MESTIZO, p.OTROSPERROS, p.APODO, p.GATOS, p.PORTE, p.FOTO,  p.SEXO, p.DEPTO, p.FECHANAC,p.CASTRADO, p.GUARDIAN ,r.NOMBRE, f_get_edad(p.ID, sysdate) EDAD FROM PERROS p INNER JOIN RAZAS r ON p.RAZA_ID=r.ID WHERE p.ID='$idP'");
     oci_execute($personal);
     while ($fila = oci_fetch_array($personal, OCI_ASSOC+OCI_RETURN_NULLS)) {
     
@@ -115,7 +115,7 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="d-flex flex-column align-items-center text-center">
-                                <img src="<?php echo "../src/perrito.jpeg"?>" alt="Admin" width="250">
+                                <img src="<?php print $fila['FOTO']?>" alt="Admin" width="250">
                                 <div class="mt-3">
                                     <h4><?php echo $fila['APODO']; ?></h4>
                                     <p class="text-secondary mb-1">Raza: <?php if($fila['MESTIZO']=='S'){echo "Mestizo/";} echo $fila['APODO']; ?></p>
