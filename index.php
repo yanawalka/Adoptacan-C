@@ -302,7 +302,7 @@ session_start();
                     <div class="col">
                         <!-- <div class="card" style="width: 18rem;"> -->
                         <div class="card h-100 border border-light border-5" style="width: 18rem;">
-                            <img class="card-img-top" src="<?php print $fila['FOTO']?>" alt="Card image cap">
+                            <img class="card-img-top" src="http://servicios.municipalidadsalta.gob.ar/adopciones-caninas/sisadoptacan/public/images/canes/<?php print $fila['FOTO']?>" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title"><?php  print $fila['APODO']?></h5>
                                 <h6 class="card-subtitle mb-2 text-muted"><?php print $fila['NOMBRE']?></h6>
