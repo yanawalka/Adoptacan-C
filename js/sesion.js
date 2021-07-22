@@ -28,9 +28,7 @@ $('#formLogin').submit(function (e) {
           Swal.fire({
             type: 'error',
             title: 'Usuario y/o clave incorrectas',
-            
           });
-          window.location.href = "../sesion.php" 
         } else {
           Swal.fire({
             type: 'success',

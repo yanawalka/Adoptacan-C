@@ -9,15 +9,13 @@ $dni = (isset($_POST['dni'])) ? $_POST['dni'] : '';
 $email = (isset($_POST['email'])) ? $_POST['email'] : '';
 $celular = (isset($_POST['celular'])) ? $_POST['celular'] : '';
 $clave = (isset($_POST['pass'])) ? $_POST['pass'] : '';
-$clave =  md5($clave);
 $domicilio = (isset($_POST['domicilio'])) ? $_POST['domicilio'] : '';
-$origenalta = 'WEB';
 
 
 
 
 switch ($opcion) {
-    case 1:$personal = oci_parse($conn,"INSERT INTO PROPIETARIOS (NOMBRES, APELLIDO, DNI, EMAIL, CELULAR, CLAVE, DOMICILIO, ORIGENALTA ) VALUES ('$nombre','$apellido', '$dni', '$email', '$celular', '$clave', '$domicilio', '$origenalta')");
+    case 1:$personal = oci_parse($conn,"INSERT INTO PROPIETARIOS (NOMBRES, APELLIDO, DNI, EMAIL, CELULAR, CLAVE, DOMICILIO ) VALUES ('$nombre','$apellido', '$dni', '$email', '$celular', '$clave', '$domicilio')");
         oci_execute($personal);
         $data=oci_fetch_assoc($personal);
         
@@ -27,6 +25,14 @@ switch ($opcion) {
     // case 2:$personal = oci_parse($conn,"SELECT DNI, EMAIL FROM PROPIETARIOS ");
         oci_execute($personal);
         $data=oci_fetch_assoc($personal);
+    
+        // if ($data===false){     
+      
+        //    $data="error";
+            
+        //  } else {$data="completa";}
+            
+
 
     break;
 //     case 2:
@@ -38,6 +44,7 @@ switch ($opcion) {
 
 // $data=oci_fetch_array($personal);
 print json_encode($data);
+
 
 
 ?>
