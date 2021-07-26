@@ -82,7 +82,7 @@
 
             <ul class="navbar-nav mb-2  mb-lg-0">
 
-                <?php if ($_SESSION["EMAIL"]===null) {
+                <?php if ($_SESSION["EMAIL"]==null) {
                 ?>
                 <li class="nav-item me-5">
                     <a class="nav-link active"  href="sesion.php">Iniciar Sesion</a>

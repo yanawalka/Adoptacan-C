@@ -17,13 +17,14 @@ $('#formLogin').submit(function (e) {
       url: "../bd/sesionIn.php",
       type: "POST",
       datatype: "json",
-      data: { usuario: usuario, clave: clave },
+      data: { 
+        usuario: usuario,
+        clave: clave },
       success: function (data) {
-
+        console.log(data);
         data = JSON.parse(data);
-
-
-        if (data === false) {
+        console.log(data);
+        if (data == false) {
 
           Swal.fire({
             type: 'error',
@@ -31,13 +32,15 @@ $('#formLogin').submit(function (e) {
           });
         } else {
           Swal.fire({
+
             type: 'success',
             title: '¡Conexión exitosa!',
             confirmButtonColor: '#3085d6',
             confirmButtonText: 'Ingresar'
           }).then((data) => {
             if (data.value) {
-                window.location.href = "../index.php";                          
+              console.log("ella")
+                // window.location.href = "../index.php";                          
             }
           })
         }
