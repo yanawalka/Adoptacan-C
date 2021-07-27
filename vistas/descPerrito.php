@@ -25,7 +25,7 @@
     $idH = $_SESSION["EMAIL"];
 
     
-    $personal = oci_parse($conn,"SELECT p.ID,p.MESTIZO, p.OTROSPERROS, p.APODO, p.GATOS, p.PORTE, p.SEXO, p.DEPTO, p.FECHANAC,p.CASTRADO, p.GUARDIAN ,r.NOMBRE, f_get_edad(p.ID, sysdate) EDAD FROM PERROS p INNER JOIN RAZAS r ON p.RAZA_ID=r.ID WHERE p.ID='$idP'");
+    $personal = oci_parse($conn,"SELECT p.ID,p.MESTIZO, p.OTROSPERROS, p.APODO, p.GATOS, p.PORTE, p.SEXO, p.DEPTO, p.FECHANAC,p.CASTRADO, p.GUARDIAN ,r.NOMBRE, p.FOTO, f_get_edad(p.ID, sysdate) EDAD FROM PERROS p INNER JOIN RAZAS r ON p.RAZA_ID=r.ID WHERE p.ID='$idP'");
     oci_execute($personal);
     while ($fila = oci_fetch_array($personal, OCI_ASSOC+OCI_RETURN_NULLS)) {
     
