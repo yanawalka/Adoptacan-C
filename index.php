@@ -181,79 +181,6 @@ session_start();
     </div>
 
 
-
-    <!-- NOSOTROS -->
-    <a name="contacto" id="contacto"></a>
-    <div class="nosotros mt-5">
-        <div class="tarjNosotros">
-            <div class="shadow-sm  shadow-lg p-3 mb-5 pb-3 bg-body rounded">
-                <h1 class=" row nombre requisitos text-center mb-1 pt-2 fw-normal"> <i> Hospital de Mascotas de la
-                        Ciudad</i></h1>
-                <hr class="mb-4">
-                <div class="row">
-                    <div class="col">
-                        <h3 class=" text-secondary ps-3 pb-2 pt-3 fw-lighter ">Donde estamos?</h3>
-                        <iframe class=" ms-3"
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14487.797661430404!2d-65.4034815!3d-24.7971856!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x39c35341c85af917!2sHospital%20P%C3%BAblico%20de%20Mascotas!5e0!3m2!1ses-419!2sar!4v1624375258306!5m2!1ses-419!2sar"
-                            width="70%" height="80%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-
-                    <div class="col ">
-                        <h3 class=" text-secondary ps-1 pb-2 pt-3 fw-lighter text-center">Como funciona el hospital?
-                        </h3>
-                        <p class="text-center">En el Hospital Municipal de Salud Animal se brinda atención primaria a
-                            mascotas
-                            y, dependiendo del
-                            caso, se realizan cirugías de menor y mediana complejidad.</p>
-
-                        <p class="text-center"> En la actualidad cuenta con 11 médicos veterinarios afectados a los
-                            distintos
-                            turnos y un profesional en
-                            los Centros Integradores Comunitarios con consultorios ubicados en los barrios Unión (zona
-                            norte) y
-                            Constitución (zona este).</p>
-
-                        <p class="text-center"> Cabe recordar que el Hospital brinda atención primaria de salud animal y
-                            dependiendo del caso, cirugías
-                            de menor y mediana complejidad. En cuadros graves se dispone el traslado a la Facultad de
-                            Ciencias
-                            Agrarias y Veterinarias de la Universidad Católica de Salta.</p>
-
-                        <p class="text-center"> El nosocomio cuenta con dos consultorios, un quirófano donde se pueden
-                            realizar
-                            tres cirugías
-                            simultáneas, sala de internación con capacidad para ocho animales, sala de guardia y salas
-                            de
-                            espera
-                            en
-                            las instalaciones ubicadas en Lavalle 542.</p>
-
-                        <p class="text-center"> IMPORTANTE: La atención de mascotas es para personas carentes de
-                            recursos de
-                            la
-                            ciudad y se exige el
-                            certificado para evitar un posible mal uso de los recursos por parte de quienes pueden
-                            costear
-                            la
-                            atención.</p>
-                    </div>
-
-                </div>
-                <div class="turnos text-center mt-5">
-                    <p class="bg-secondary fs-4 text-white">Los turnos se darán por orden de llegada a partir de las 8 y
-                        se atenderá con los profesionales veterinarios desde 8.30 a 12.30. Se darán 30 turnos por
-                        jornada</p>
-                </div>
-                <div class="row mt-5 pt-4">
-                    <p class="requisitos text-center fs-1">Telefono: 0387-4373490</p>
-                    <p class="text-secondary text-center fs-1">Direccion: Lavalle 542, Salta Capital</p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
     <!-- ADOPCION -->
     <a name="adopcion" id="adopcion"></a>
 
@@ -325,9 +252,76 @@ session_start();
     </div>
     </div>
 
+    <!-- NOSOTROS -->
+    <a name="contacto" id="contacto"></a>
+    <div class="nosotros mt-5">
+        <div class="tarjNosotros">
+            <div class="shadow-sm  shadow-lg p-3 mb-5 pb-3 bg-body rounded">
+                <h1 class=" row nombre requisitos text-center mb-1 pt-2 fw-normal"> <i> Hospital de Mascotas de la
+                        Ciudad</i></h1>
+                <hr class="mb-4">
+                <div class="row">
+                    <div class="col">
+                        <h3 class=" text-secondary ps-3 pb-2 pt-3 fw-lighter ">Donde estamos?</h3>
+                        <iframe class=" ms-3"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14487.797661430404!2d-65.4034815!3d-24.7971856!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x39c35341c85af917!2sHospital%20P%C3%BAblico%20de%20Mascotas!5e0!3m2!1ses-419!2sar!4v1624375258306!5m2!1ses-419!2sar"
+                            width="70%" height="80%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
 
+                    <div class="col ">
+                        <h3 class=" text-secondary ps-1 pb-2 pt-3 fw-lighter text-center">Como funciona el hospital?
+                        </h3>
+                        <p class="text-center">En el Hospital Municipal de Salud Animal se brinda atención primaria a
+                            mascotas
+                            y, dependiendo del
+                            caso, se realizan cirugías de menor y mediana complejidad.</p>
 
+                        <p class="text-center"> En la actualidad cuenta con 11 médicos veterinarios afectados a los
+                            distintos
+                            turnos y un profesional en
+                            los Centros Integradores Comunitarios con consultorios ubicados en los barrios Unión (zona
+                            norte) y
+                            Constitución (zona este).</p>
 
+                        <p class="text-center"> Cabe recordar que el Hospital brinda atención primaria de salud animal y
+                            dependiendo del caso, cirugías
+                            de menor y mediana complejidad. En cuadros graves se dispone el traslado a la Facultad de
+                            Ciencias
+                            Agrarias y Veterinarias de la Universidad Católica de Salta.</p>
+
+                        <p class="text-center"> El nosocomio cuenta con dos consultorios, un quirófano donde se pueden
+                            realizar
+                            tres cirugías
+                            simultáneas, sala de internación con capacidad para ocho animales, sala de guardia y salas
+                            de
+                            espera
+                            en
+                            las instalaciones ubicadas en Lavalle 542.</p>
+
+                        <p class="text-center"> IMPORTANTE: La atención de mascotas es para personas carentes de
+                            recursos de
+                            la
+                            ciudad y se exige el
+                            certificado para evitar un posible mal uso de los recursos por parte de quienes pueden
+                            costear
+                            la
+                            atención.</p>
+                    </div>
+
+                </div>
+                <div class="turnos text-center mt-5">
+                    <p class="bg-secondary fs-4 text-white">Los turnos se darán por orden de llegada a partir de las 8 y
+                        se atenderá con los profesionales veterinarios desde 8.30 a 12.30. Se darán 30 turnos por
+                        jornada</p>
+                </div>
+                <div class="row mt-5 pt-4">
+                    <p class="requisitos text-center fs-1">Telefono: 0387-4373490</p>
+                    <p class="text-secondary text-center fs-1">Direccion: Lavalle 542, Salta Capital</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <!-- CUIDADOS -->
     <div class="cuidados">
