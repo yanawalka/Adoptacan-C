@@ -68,7 +68,7 @@ idH = "<?php echo $idH;?>";
                 <?php if ($_SESSION["EMAIL"]===null) {
                 ?>
                 <li class="nav-item me-5">
-                    <a class="nav-link active"  href="sesion.php">Iniciar Sesion</a>
+                    <a class="nav-link active"  href="#">Iniciar Sesion</a>
                 </li>
                 <li class="nav-item pt-3">
                     <a class="btn btn-danger btn-sm" href="registro.php" role="button"">Registrate</a>
