@@ -293,16 +293,16 @@ session_start();
 
                     <?php   
     include 'bd/conexion.php';
-      $personal = oci_parse($conn,"SELECT p.ID, p.APODO, p.SEXO, p.FECHANAC ,r.NOMBRE FROM PERROS p INNER JOIN RAZAS r ON p.RAZA_ID=r.ID WHERE ROWNUM <= 8 AND VISIBLE = 'S'");
+      $personal = oci_parse($conn,"SELECT p.ID, p.APODO, p.SEXO, p.FOTO , p.FECHANAC ,r.NOMBRE FROM PERROS p INNER JOIN RAZAS r ON p.RAZA_ID=r.ID WHERE ROWNUM <= 8 AND VISIBLE = 'S' ");
       oci_execute($personal);
       while ($fila = oci_fetch_array($personal, OCI_ASSOC+OCI_RETURN_NULLS)) {
   ?>
-
                     <!-- ####TARJETA#### -->
                     <div class="col">
                         <!-- <div class="card" style="width: 18rem;"> -->
                         <div class="card h-100 border border-light border-5" style="width: 18rem;">
-                            <img class="card-img-top" src="<?php echo "src/perrito.jpeg"?>" alt="Card image cap">
+                            <img class="card-img-top" src="http://servicios.municipalidadsalta.gob.ar/adopciones-caninas/sisadoptacan/public/images/canes/<?php print $fila['FOTO']?>" alt="Card image cap">
+                            <p><?php print $fila['FOTO']?></p>
                             <div class="card-body">
                                 <h5 class="card-title"><?php  print $fila['APODO']?></h5>
                                 <h6 class="card-subtitle mb-2 text-muted"><?php print $fila['NOMBRE']?></h6>

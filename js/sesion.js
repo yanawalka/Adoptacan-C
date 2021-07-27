@@ -39,8 +39,7 @@ $('#formLogin').submit(function (e) {
             confirmButtonText: 'Ingresar'
           }).then((data) => {
             if (data.value) {
-              console.log("ella")
-                // window.location.href = "../index.php";                          
+                window.location.href = "../index.php";                          
             }
           })
         }
