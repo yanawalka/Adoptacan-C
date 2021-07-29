@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<?php 
+    <?php 
 session_start();
 
 if($_SESSION['EMAIL'] == null){
@@ -26,10 +26,10 @@ if($_SESSION['EMAIL'] == null){
 $idP = $_GET['idP'];
 $idH = $_SESSION['EMAIL'];
 ?>
-<script type="text/javascript">
-idP = "<?php echo $idP;?>";
-idH = "<?php echo $idH;?>";
-</script>
+    <script type="text/javascript">
+    idP = "<?php echo $idP;?>";
+    idH = "<?php echo $idH;?>";
+    </script>
     <!-- NAVBAR -->
     <nav class="navegador navbar navbar-expand-lg sticky-top navbar-dark ">
         <div class="container-fluid row">
@@ -47,7 +47,8 @@ idH = "<?php echo $idH;?>";
                     </li>
 
                     <li class="nav-item me-5">
-                        <a class="nav-link " id="btnNav" aria-current="page" href="../index.php#adopcion">Como adoptar?</a>
+                        <a class="nav-link " id="btnNav" aria-current="page" href="../index.php#adopcion">Como
+                            adoptar?</a>
                     </li>
 
                     <li class="nav-item me-5">
@@ -55,7 +56,8 @@ idH = "<?php echo $idH;?>";
                     </li>
 
                     <li class="nav-item me-5">
-                        <a class=" nav-link " id="btnNav" aria-current="page" href="../index.php#castracion">Castraciones</a>
+                        <a class=" nav-link " id="btnNav" aria-current="page"
+                            href="../index.php#castracion">Castraciones</a>
                     </li>
 
                 </ul>
@@ -68,15 +70,15 @@ idH = "<?php echo $idH;?>";
                 <?php if ($_SESSION["EMAIL"]===null) {
                 ?>
                 <li class="nav-item me-5">
-                    <a class="nav-link active"  href="#">Iniciar Sesion</a>
+                    <a class="nav-link active" href="#">Iniciar Sesion</a>
                 </li>
                 <li class="nav-item pt-3">
                     <a class="btn btn-danger btn-sm" href="registro.php" role="button"">Registrate</a>
                 </li>
 
                 <?php } else{ ?>
-                <li class="nav-item me-5">
-                    <a class="nav-link active" aria-current="page" href="#"><?php echo $_SESSION["EMAIL"];?></a>
+                <li class=" nav-item me-5">
+                        <a class="nav-link active" aria-current="page" href="#"><?php echo $_SESSION["EMAIL"];?></a>
                 </li>
                 <li class="nav-item">
                     <a class="btn btn-danger btn-sm" href="../bd/sesionOut.php" role="button">
@@ -104,33 +106,22 @@ idH = "<?php echo $idH;?>";
                     <div class="container-sm mt-5">
                         <h1 class="d-flex justify-content-start">Solicitud de adopcion</h1>
                         <div class="mb-3 ">
-                        <label for="razon" class="form-label d-flex justify-content-start">Por que quiere adoptar?</label>
-                        <textarea class="form-control d-flex justify-content-start" id="razon" rows="3" name="razon"></textarea>
-                            
+                            <label for="razon" class="form-label d-flex justify-content-start">Por que quiere
+                                adoptar?</label>
+                            <textarea class="form-control d-flex justify-content-start" id="razon" rows="3"
+                                name="razon"></textarea>
+
                         </div>
                         <h4 class="d-flex justify-content-start">Lea atentamente los terminos y condiciones de uso</h4>
                         <div class="form-floating">
                             <textarea name="terminos" class="form-control" id="terminos" readonly
                                 style="height:200px"></textarea>
-                            <label for="terminos" class="text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
-                                veritatis
-                                odit illum molestiae ab eos quam voluptatum,
-                                deserunt sed quo iste sint quos maiores tempore beatae perspiciatis numquam ut sunt!
-                                Lorem ipsum
-                                dolor, sit amet consectetur adipisicing elit.
-                                Fuga, quos cupiditate ut dignissimos recusandae quam, maiores, culpa ipsum qui beatae
-                                velit
-                                accusantium molestias. Ipsum alias expedita quam, sed
-                                commodi vitae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
-                                veritatis odit
-                                illum molestiae ab eos quam voluptatum,
-                                deserunt sed quo iste sint quos maiores tempore beatae perspiciatis numquam ut sunt!
-                                Lorem ipsum
-                                dolor, sit amet consectetur adipisicing elit.
-                                Fuga, quos cupiditate ut dignissimos recusandae quam, maiores, culpa ipsum qui beatae
-                                velit
-                                accusantium molestias. Ipsum alias expedita quam, sed
-                                commodi vitae.</label>
+                            <label for="terminos" class="text-start">ACEPTO EN ADOPCION LA MASCOTA CON LAS
+                                CARACTERISTICAS QUE SE DETALLAN ANTERIORMENTE. ADEMAS, AUTORIZO
+                                A
+                                LA DIRECCION GRAL.,DE BIENESTAR ANIMAL Y TENENCIA RESPONSABLE A CONCURRIR A MI DOMICILIO
+                                PARTICULAR A VERIFICAR EN LAS CONDICIONES
+                                EN LAS QUE SE ENCUENTRA EL ANIMAL QUE ADOPTE.</label>
                         </div>
                         <div class="mb-3">
                             <div class=" ms-4 mt-4 form-check d-flex justify-content-start">
@@ -210,8 +201,7 @@ idH = "<?php echo $idH;?>";
                     <div class="row cf mt-2">
                         <h4 class="text-muted mb-4">Necesita un perro guardian?</h4>
                         <div class="four col">
-                            <input type="radio" value="S" name="guardian" id="guardian1" checked><label
-                                for="guardian1">
+                            <input type="radio" value="S" name="guardian" id="guardian1" checked><label for="guardian1">
                                 <h4>SI</h4>
                             </label>
                         </div>
@@ -225,7 +215,7 @@ idH = "<?php echo $idH;?>";
                     <div class="button">Next</div>
                 </fieldset>
 
-                <fieldset class="section "id="seccion">
+                <fieldset class="section " id="seccion">
                     <div class="registroCentrado">
                         <h3 class="titulos ">Ya casi enviaste tu solicitud</h3>
                         <h5 class="mb-1 text-secondary ">Nos vamos a estar comunicar con vos</h5>
@@ -235,7 +225,7 @@ idH = "<?php echo $idH;?>";
                 </fieldset>
 
 
-                
+
             </form>
         </div>
     </div>

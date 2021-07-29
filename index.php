@@ -67,7 +67,7 @@ session_start();
                 <?php if ($_SESSION["EMAIL"]===null) {
                 ?>
                 <li class="nav-item me-5">
-                    <a class="nav-link active" id="btnNav" href="#">Iniciar Sesion</a>
+                    <a class="nav-link active" id="btnNav" href='vistas/sesion.php'">Iniciar Sesion</a>
                 </li>
                 <li class="nav-item pt-3">
                     <a class="btn btn-danger btn-sm" href="vistas/registro.php" role="button"">Registrate</a>
@@ -75,7 +75,7 @@ session_start();
 
                 <?php } else{ ?>
                 <li class=" nav-item me-5">
-                        <a class="nav-link active" aria-current="page" href="#"><?php echo $_SESSION["EMAIL"];?></a>
+                        <a class="nav-link active" aria-current="page" href="vistas/index.php"><?php echo $_SESSION["EMAIL"];?></a>
                 </li>
                 <li class="nav-item">
                     <a class="btn btn-danger btn-sm" href="bd/sesionOut.php" role="button">
