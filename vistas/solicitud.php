@@ -150,7 +150,7 @@ $idH = $_SESSION['EMAIL'];
                             </label>
                         </div>
                         <div class="four col">
-                            <input type="radio" value="0" name="nene" id="nene2"><label for="nene2">
+                            <input type="radio" value="-1" name="nene" id="nene2"><label for="nene2">
                                 <h4>NO</h4>
                             </label>
                         </div>
@@ -178,7 +178,7 @@ $idH = $_SESSION['EMAIL'];
                             </label>
                         </div>
                         <div class="four col">
-                            <input type="radio" name="perro" value="N" id="perro2"><label for="perro2">
+                            <input type="radio" name="perro" value="-" id="perro2"><label for="perro2">
                                 <h4>NO</h4>
                             </label>
                         </div>
@@ -192,7 +192,7 @@ $idH = $_SESSION['EMAIL'];
                             </label>
                         </div>
                         <div class="four col">
-                            <input type="radio" name="gato" value="N" id="gato2"><label for="gato2">
+                            <input type="radio" name="gato" value="-" id="gato2"><label for="gato2">
                                 <h4>NO</h4>
                             </label>
                         </div>

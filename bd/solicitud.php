@@ -1,6 +1,5 @@
 <?php
 
-
 include_once 'conexion.php';
 $nene = (isset($_POST['nene'])) ? $_POST['nene'] : '';
 $depa = (isset($_POST['depa'])) ? $_POST['depa'] : '';
@@ -8,10 +7,9 @@ $perro = (isset($_POST['perro'])) ? $_POST['perro'] : '';
 $gato = (isset($_POST['gato'])) ? $_POST['gato'] : '';
 $guardian = (isset($_POST['guardian'])) ? $_POST['guardian'] : '';
 $razon = (isset($_POST['razon'])) ? $_POST['razon'] : '';
-// $check = (isset($_POST['check'])) ? $_POST['check'] : '';
 $idH = (isset($_POST['idH'])) ? $_POST['idH'] : '';
-// $idP = (isset($_POST['idP'])) ? $_POST['idP'] : '';
 $activa="S";
+
 
 $idNuevo = oci_parse($conn,"SELECT ID FROM PROPIETARIOS WHERE EMAIL='$idH' ");
 oci_execute($idNuevo);

@@ -206,21 +206,23 @@ session_start();
     </div>
 
 
-    <!-- ADOPCION -->
+    <!-- ADOPCION CARRUSEL -->
     <a name="adopcion" id="adopcion"></a>
 
     <div id="adopcion">
         <br>
         <!-- REQUISITOS -->
         <div class="  shadow-sm  shadow-lg p-3 mb-5 bg-body rounded">
-
+            <div> 
+            <button>Perros Nuevos</button>
+            </div>
             <div class="container">
             <a name="perritos" id="perritos"></a>
                 <div class="row row-cols-1 row-cols-md-4 g-4">
 
                     <?php   
     include 'bd/conexion.php';
-      $personal = oci_parse($conn,"SELECT p.ID, p.APODO, p.SEXO, p.FOTO , p.FECHANAC ,r.NOMBRE FROM PERROS p INNER JOIN RAZAS r ON p.RAZA_ID=r.ID WHERE ROWNUM <= 8 AND FOTO IS NOT NULL AND VISIBLE = 'S'");
+      $personal = oci_parse($conn,"SELECT dbms_random.value(1,100), p.ID, p.APODO, p.SEXO, p.FOTO , p.FECHANAC ,r.NOMBRE FROM PERROS p INNER JOIN RAZAS r ON p.RAZA_ID=r.ID WHERE ROWNUM <= 8 AND FOTO IS NOT NULL AND VISIBLE = 'S' order by 1");
       oci_execute($personal);
       while ($fila = oci_fetch_array($personal, OCI_ASSOC+OCI_RETURN_NULLS)) {
   ?>
@@ -250,7 +252,7 @@ session_start();
             </div>
         </div>
     </div>
-    </div>
+
 
     <!-- NOSOTROS -->
     <a name="contacto" id="contacto"></a>
